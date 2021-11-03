@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Henny+Penny&family=Libre+Baskerville&family=Nova+Square&family=Source+Code+Pro:wght@300&display=swap");
+@import CloseButton from "react-bootstrap/CloseButton" * {
+  box-sizing: border-box;
+}
+body {
+  background-color: #fdd4c1;
+  font-family: "Nova Square", cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px;
+  min-height: 100vh;
+}
+
+.btn {
+  background-color: #eaabbc;
+  color: white;
+  font-family: "Libre Baskerville", serif;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 25px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+}
+.btn:hover {
+  background-color: #b5afbc;
+}
+.modal-container {
+  background-color: #c2dbdf;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+
+.modal {
+  background-color: rgb(201, 198, 199);
+  padding: 30px 50px;
+  border-radius: 5px;
+  width: 600px;
+  max-width: 100%;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  position: relative;
+}
+.modal1 {
+  background-color: green;
+}
+.modal-container.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal h1 {
+  margin: 0;
+}
+.modal p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+.modal-container1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal-container1.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.modal-container2 {
+  background-color: #f9e5da;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+}
+.modal-container2.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-container2.remove {
+  opacity: 0;
+  pointer-events: auto;
+}

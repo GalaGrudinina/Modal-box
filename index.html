@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Modal</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Henny+Penny&family=Libre+Baskerville&family=Nova+Square&family=Source+Code+Pro:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <button class='btn' id="open">Click me please</button>
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <h1>Modals are</h1>
+        <p>Very fun things</p>
+        <button class='btn' id="subscribe">Subscribe</button>
+        <button class='btn' id="close">Close me</button>
+      </div>
+    </div>
+  
+    <div class="modal-container1" id="modal_container1">
+      <div class="modal" id='modal1'>
+        <h1>Subscribe NOW</h1>
+        <form>
+          <label for="fname">Your name:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="lname">Email:</label><br />
+          <input type="text" id="lname" name="lname" />
+        </form>
+        <button class='btn' id="subscribe1">Subscribe</button>
+        <div class="modal-container2" id="modal_container2" data-closable>
+          <div class="modal">
+            <h1>Succesfully!</h1><br>
+            <p>We will send you updates each week</p></div>
+            <a href="/" class="btn" id='closebtn'>Go home <i class='fas fa-home'></i></a>
+      </div>
+    </div>
+   
+    <script src="modal.js"></script>
+  </body>
+</html>
